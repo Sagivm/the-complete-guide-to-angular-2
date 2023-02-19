@@ -1,2 +1,46 @@
-<app-server></app-server>
-<app-server></app-server>
+<h4>Server Name</h4>
+<input  
+    type="text" 
+    name="serverName" 
+    [(ngModel)]="this.serverName"/>
+<hr />
+<button 
+    type='button' 
+    class="btn btn-primary" 
+    [disabled]='!this.allowNewServers'
+    (click)="this.onCreateNewServer()">
+    Add Server
+</button>
+<!-- <p>{{this.serverCreationStatus}}</p> -->
+<p *ngIf="this.serverCreated">The server was created, server name is {{serverName}}</p>
+<hr />
+<input  
+    type="text" 
+    name="userName" 
+    [(ngModel)]="this.userName"/>
+<button 
+    type='button' 
+    class="btn btn-primary" 
+    [disabled]='!this.userName'
+    (click)="this.onUpdateUserName($event)">
+    Delete_input
+</button>
+<p>
+    {{this.userName}}
+</p>
+<hr />
+<app-server *ngFor="let server of servers">*</app-server>
+
+
+<hr />
+<button 
+    type='button' 
+    class="btn btn-primary" 
+    (click)="this.onDisplayPass($event)">
+    Display details
+</button>
+<h5
+    [hidden]="!this.displayToggle">
+    password = "IlikeBigButts"
+</h5>
+<app-timestamp *ngFor="let timestamp of timestamps">click</app-timestamp>
