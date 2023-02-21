@@ -6,10 +6,10 @@ import { HeaderComponent } from './header/header.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
-import { IngredientComponent } from './shopping-list/ingredient/ingredient.component';
 import { RecipeItemComponent } from './recipe-book/recipe-list/recipe-item/recipe-item.component';
 import { RecipeListComponent } from './recipe-book/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,13 @@ import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail
     ShoppingListComponent,
     RecipeBookComponent,
     ShoppingListEditComponent,
-    IngredientComponent,
     RecipeItemComponent,
     RecipeListComponent,
     RecipeDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
