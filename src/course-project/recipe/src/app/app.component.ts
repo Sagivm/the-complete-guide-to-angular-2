@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   }
 
   onNavItemSelected(option: string){  
-    console.log(option);
     this.context = option;
   }
 }

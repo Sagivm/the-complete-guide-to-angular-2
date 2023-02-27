@@ -12,7 +12,6 @@ export class HeaderComponent {
   constructor(){}
 
   onNavItemSelected(option: string){
-    console.log(option);
     this.navContext.emit(option);
     
   }
