@@ -7,13 +7,6 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent {
 
-  @Output() navContext = new EventEmitter<string>();
-  
   constructor(){}
-
-  onNavItemSelected(option: string){
-    this.navContext.emit(option);
-    
-  }
 
 }

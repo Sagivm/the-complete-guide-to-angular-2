@@ -4,8 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <app-recipe-book *ngIf="this.context=='recipes'"></app-recipe-book>
-            <app-shopping-list *ngIf="this.context=='shoplst'"></app-shopping-list> 
+            <!-- <app-recipe-book ></app-recipe-book>
+            <app-shopping-list routerLink="/shopping-list"></app-shopping-list> -->
+            <router-outlet></router-outlet> 
         </div>
     </div>
 </div>
