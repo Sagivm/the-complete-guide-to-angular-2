@@ -25,6 +25,15 @@ export class RecipeService{
     getRecipes(){
         return this.recipes.slice()
     }
+    
+    getRecipe(name: string): Recipe{
+        const recipe = this.recipes.find(
+          (r) => {
+            return r.name == name;
+          }
+        );
+        return recipe
+      }
 
 
 }

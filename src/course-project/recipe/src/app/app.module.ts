@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropdownDirective } from './util/dropdown.directive';
 import { ShoppingListService } from './util/shopping-list.service';
 import { AppRoutingModule } from './app-routing.module';
+import { RecipeBlankComponent } from './recipe-book/recipe-list/recipe-blank/recipe-blank.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
     RecipeItemComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeBlankComponent
   ],
   imports: [
     BrowserModule,
