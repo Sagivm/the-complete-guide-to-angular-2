@@ -10,17 +10,13 @@ import { Route,Router } from '@angular/router';
 })
 export class RecipeItemComponent{
 
-  @Input('recipe') recipe: Recipe;
-  @Output('selectedRecipe') selectedRecipe: EventEmitter<Recipe> = new EventEmitter<Recipe>();
-  
+  @Input('recipe') recipe: Recipe; 
   constructor(private recipeService: RecipeService,
     private router: Router){}
   
   onRecipeItemClick()
   {
     this.router.navigate([this.recipe.name]) 
-    //this.recipeService.recipeSelected.emit(this.recipe)
-    // this.selectedRecipe.emit(this.recipe);
   }
 }
 

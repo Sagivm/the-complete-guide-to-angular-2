@@ -14,6 +14,7 @@ import { DropdownDirective } from './util/dropdown.directive';
 import { ShoppingListService } from './util/shopping-list.service';
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeBlankComponent } from './recipe-book/recipe-list/recipe-blank/recipe-blank.component';
+import { RecipeEditComponent } from './recipe-book/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RecipeBlankComponent } from './recipe-book/recipe-list/recipe-blank/rec
     RecipeListComponent,
     RecipeDetailComponent,
     DropdownDirective,
-    RecipeBlankComponent
+    RecipeBlankComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,

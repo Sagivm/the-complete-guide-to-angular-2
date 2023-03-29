@@ -8,14 +8,11 @@ import { RecipeService } from '../util/recipe.service';
   providers:[ RecipeService ]
 })
 export class RecipeBookComponent implements OnInit {
-  selectedRecipe: Recipe = null;
   
   constructor(private recipeService: RecipeService){} 
 
   ngOnInit(){
-  this.recipeService.recipeSelected.subscribe(recipe =>{
-    this.selectedRecipe = recipe
-  })
+  
   }
 
 }
